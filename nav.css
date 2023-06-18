@@ -1,0 +1,34 @@
+@media only screen and (max-width:600px) {
+    /* css style to hide nav content except the first element*/
+    /* css style to hide nav content except the first element*/
+   .topnav .a{
+        display: none;
+    }
+    /* css style to display the bars icon on responsive mode */
+     /* css style to display the bars icon on responsive mode */
+     .icon{
+        float: right;
+        display: block !important;
+        
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .topnav.responsive .a{
+        text-align: left;
+        display: block;
+        float: none;
+    }
+
+    .topnav.responsive .icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive{
+        position: relative;
+ 
+    }
+
+}
