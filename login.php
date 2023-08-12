@@ -4,7 +4,7 @@
 session_start();
 //dbconnection
 //dbconnection
-include("dbConnection.php");
+include("./database/dbConnection.php");
 if (isset($_POST["submit"])) {
     //fetching data from the forms
     //fetching data from the forms
@@ -69,23 +69,23 @@ if (isset($_POST["submit"])) {
         <div class=" lg:h-[23rem] lg:w-[23rem] dark:bg-gray-600 lg:border lg:border-gray-500 rounded-md items-center flex  justify-center h-screen">
             <form action="" method="post">
                 <div class="flex justify-center items-center text-white">
-                    <h1 class="text-2xl">LOGIN</h1>
+                    <h1 class="text-2xl">Login</h1>
                 </div>
 
-                <label for="" class="text-white text-lg">Email</label><br>
-                <input class="h-8 w-60 rounded outline-none pl-2" name="email" type="text" placeholder="enter email"><br><br>
+                <label for="" class="text-white text-sm">Email</label><br>
+                <input class="h-8 w-60 rounded outline-none pl-2 text-sm" name="email" type="text" placeholder="enter email"><br><br>
 
-                <label class="text-white text-lg">Password</label><br>
-                <input type="text" class="h-8 w-60 rounded outline-none pl-2" name="password" placeholder="enter password"><br>
+                <label class="text-white text-sm">Password</label><br>
+                <input type="text" class="h-8 w-60 rounded outline-none pl-2 text-sm" name="password" placeholder="enter password"><br>
 
                 <div class="text-right pt-1 text-red-500">
                     <a class="text-sm " href="">Forgot Password</a>
                 </div><br>
 
-                <div class="flex justify-center items-center bg-blue-500 h-8 rounded  w-32 m-auto">
-                    <input class="text-white" type="submit" name="submit" value="LOGIN">
+                <div class=" ">
+                    <input class="text-white w-60  bg-blue-500 h-8 rounded" type="submit" name="submit" value="Login">
                 </div>
-                <p class="mt-8 text-white text-[13px]">Don't have an account? <a class="text-blue-500" href="sign_up.php"> SIGN UP</a></p>
+                <p class="mt-8 text-white text-[13px]">Don't have an account? <a class="text-blue-500" href="sign_up.html"> SIGN UP</a></p>
             </form>
         </div>
     </div>

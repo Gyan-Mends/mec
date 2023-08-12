@@ -5,7 +5,7 @@ session_start();
 
 //dbConnection
 //dbConnection
-include("dbConnection.php");
+include("./database/dbConnection.php");
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ include("dbConnection.php");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SERVICES CATEGORIES</title>
 
     <!-- assets -->
     <!-- assets -->
@@ -57,21 +57,25 @@ include("dbConnection.php");
     </script>
 </head>
 
-<body style="font-family: poppins; overflow-x:hidden" class="bg-gray-800 pt-6 lg:pr-6 lg:pl-6">
+<body style="font-family: poppins; overflow-x:hidden" class="bg-gray-800 pt-6 pl-6 pr-6">
+    <!-- navigation bar -->
+    <!-- navigation bar -->
     <!-- navigation bar -->
     <!-- navigation bar -->
     <div class="topnav lg:!ml-auto register" id="myTopnav">
-        <a class="a !text-blue-100 hover:!text-white" href="index.php">Home</a>
-        <a class="a !text-blue-100 hover:!text-white" href="#">Contact</a>
-        <a class="a !text-blue-100 hover:!text-white" href="#">About</a>
-        <a class="a !text-blue-100 hover:!text-white" href="services.php">Services</a>
-        <a class="a !text-blue-100 hover:!text-white" href="#">Order Services</a>
-        <input type="text" id="search-input" class="ml-8 h-9 w-60 pl-2 rounded-lg outline-none" placeholder="Enter service to search" onkeyup="display()" placeholder="Search">
-        <a href="javascript:void(0)" class="icon a -mt-6" onclick="myFunction()">
+        <a class="a !text-blue-100 hover:!text-white p-2" href="index.php">Home</a>
+        <a class="a !text-blue-100 hover:!text-white p-2" href="#">Contact</a>
+        <a class="a !text-blue-100 hover:!text-white p-2" href="#">About</a>
+        <a class="a !text-blue-100 hover:!text-white p-2" href="services.php">Services</a>
+        <a class="a !text-blue-100 hover:!text-white p-2" href="login.php">Order Services</a>
+        <input type="text" id="search-input" class="lg:float-right lg:-mt-2 md:float-right md:-mt-2  h-9 w-60 pl-2 rounded-lg outline-none" placeholder="Enter service to search" onkeyup="display()" placeholder="Search">
+        <a href="javascript:void(0)" class="icon hidden a -mt-4 mt-2 text-white" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
     <div class="mt-4 h-[0.1px] bg-gray-500"></div>
+
+    
 
     <!-- categories -->
     <!-- categories -->

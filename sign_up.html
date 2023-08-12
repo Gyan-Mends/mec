@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="" style=" overflow-x:hidden;" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- assets -->
+    <!-- assets -->
+    <link rel="stylesheet" href="Assets/fonts/fonts.css">
+
+    <!-- script -->
+    <!-- script -->
+    <script src="Assets/tailwind.js"></script>
+</head>
+
+<body style="font-family: 'poppins'; overflow-x:hidden;" class="bg-gray-800 ">
+    <div class=" flex justify-center items-center h-screen ">
+        <div
+            class=" h-[35rem] lg:h-[25rem] mw:h-[25rem] pt-10 w-[20rem] lg:w-[40rem] md:w-[40rem]  dark:bg-gray-600 lg:border lg:border-gray-500 rounded-md items-center flex  justify-center h-screen pb-10">
+            <!-- forms -->
+            <!-- forms -->
+            <div class="forms">
+                <div class="flex justify-center items-center text-white">
+                    <h1 class="lg:text-[30px] lg:-mt-20 text-[23px]">Create New Account </h1>
+                </div>
+                <div class="md:grid md:grid-cols-2 lg:grid-cols-2 gap-10 mt-8 ">
+                    <div>
+                        <!-- name input field -->
+                        <!-- name input field -->
+                        <label for="" class="text-white text-[16px]">Name</label><br>
+                        <input class="h-8 w-60 rounded outline-none pl-2 placeholder:text-[14px]" type="text"
+                            placeholder="enter your name" id="name" required><br><br>
+                        <!-- email input field -->
+                        <!-- email input field -->
+                        <label for="" class="text-white  text-[16px]">Email</label><br>
+                        <input class="h-8 w-60 rounded outline-none pl-2 placeholder:text-[14px]" type="text"
+                            placeholder="enter your email" id="email" required><br><br>
+                    </div>
+                    <div class=" lg:mt-0">
+                        <!-- number input field -->
+                        <!-- number input field -->
+                        <label for="" class="text-white  text-[16px]">Number</label><br>
+                        <input class="h-8 w-60 rounded outline-none pl-2 placeholder:text-[14px]" type="text"
+                            placeholder="enter your number" id="number" required><br><br>
+
+                        <!-- password input field -->
+                        <!-- password input field -->
+                        <label class="text-white  text-[16px]">Password</label><br>
+                        <input type="text" class="h-8 w-60 rounded outline-none pl-2 placeholder:text-[14px]"
+                            placeholder="enter your password" id="password" required><br><br>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center    mt-4">
+                    <button class="text-white bg-blue-500 h-8 rounded w-60" type="submit" id="submit" >Create</button>
+                </div>
+                <div class="text-center">
+                    <p class="mt-8 text-white text-[13px]">Already have an account? <a class="text-blue-500"
+                            href="login.php"> Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <!-- script -->
+    <script src="./Assets/jquery-3.6.0.min.js"></script>
+    <script src="./request.js"></script>
+    <script src="./Assets/sweetalert.min.js"></script>
+</body>
+
+</html>
