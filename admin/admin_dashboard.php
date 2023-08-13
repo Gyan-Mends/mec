@@ -5,7 +5,7 @@ session_start();
 
 //dbConnection
 //dbConnection
-include("dbConnection.php");
+include("../dbConnection.php");
 ?>
 
 <!DOCTYPE html>
@@ -19,12 +19,12 @@ include("dbConnection.php");
 
     <!-- assets -->
     <!-- assets -->
-    <link rel="stylesheet" href="Assets/fontawesome/css/all.css">
-    <link rel="stylesheet" href="Assets/fonts/fonts.css">
+    <link rel="stylesheet" href="../Assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="../Assets/fonts/fonts.css">
     <link rel="stylesheet" href="nav.css">
     <!-- script -->
     <!-- script -->
-    <script src="Assets/tailwind.js"></script>
+    <script src="../Assets/tailwind.js"></script>
 
     <style>
         /* Set the scrollbar height */
@@ -72,20 +72,20 @@ include("dbConnection.php");
         <div class="text-white ">
             <!-- side navigation bar for big screen-->
             <!-- side navigation bar for big screen-->
-            <div class="lg:bg-gray-600 md:bg-gray-600 flex-col justify-between lg:w-60 md:w-60 h-screen absolute hidden lg:block md:block">
+            <div class="lg:bg-gray-700 md:bg-gray-700 flex-col justify-between lg:w-60 md:w-60 h-screen absolute hidden lg:block md:block shadow-sm">
 
                 <!--nav contents -->
                 <div class="p-8 ">
-                    <a href="index.php">
+                    <a href="../index.html">
                         <div class="flex gap-4">
-                            <i class="fa-solid fa-house-blank text-[20px] text-gray-50"></i>
-                            <p class="text-blue-50">Home</p>
+                            <i class="fa-solid fa-house-blank text-sm text-gray-50"></i>
+                            <p class="text-blue-50 text-sm">Home</p>
                         </div>
                     </a>
                     <a href="">
                         <div class=" flex gap-4 mt-4">
-                            <i class="fa-solid fa-cart-shopping text-[20px] text-gray-50"></i>
-                            <p class="text-blue-50">Carts</p>
+                            <i class="fa-solid fa-cart-shopping text-sm text-gray-50"></i>
+                            <p class="text-blue-50 text-sm">Dashboard</p>
                         </div>
                     </a>
                     <a href="">

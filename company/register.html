@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="" style=" overflow-x:hidden;" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- assets -->
+    <!-- assets -->
+    <link rel="stylesheet" href="../Assets/fonts/fonts.css">
+
+    <!-- script -->
+    <!-- script -->
+    <script src="../Assets/tailwind.js"></script>
+</head>
+
+<body style="font-family: 'poppins'; overflow-x:hidden;" class="bg-gray-800 p-10">
+    <div class="">
+        <h1 class="text-blue-100 text-center animate-bounce text-2xl">Welcome Service Seller </h1>
+        <p class="text-center  text-blue-100">Get An Account With Us</p>
+    </div>
+    <!-- forms -->
+    <!-- forms -->
+    <div class="forms pt-6 mt-4 ml-auto">
+        <div class=" lg:grid lg:grid-cols-3 gap-10 mt-8 ">
+            <!-- company details -->
+            <!-- company details -->
+            <div class="lg:col-span-2 ml-10 lg:ml-0 md:ml-0 justify-center">
+                <p class="text-xl text-blue-100 text-center">Company Details</p>
+                <div class="lg:grid lg:grid-cols-2  md:grid md:grid-cols-2 mt-6">
+
+                    <div>
+                        <!-- company name input field -->
+                        <!-- company name number input field -->
+                        <label for="" class="text-blue-100  text-sm"> Company Name</label><br>
+                        <input class="h-8 w-60 rounded outline-none pl-2 text-sm bg-blue-50" type="text"
+                            placeholder=" enter company name" id="companyName" required><br><br>
+                        <!-- email input field -->
+                        <!-- email name number input field -->
+                        <label for="email" class="text-blue-100  text-sm"> Email</label><br>
+                        <input class="h-8 w-60 rounded outline-none pl-2 text-sm bg-blue-50" type="text"
+                            placeholder="enter email" id="email" required><br><br>
+                        <!-- location input field -->
+                        <!-- location number input field -->
+                        <label for="location" class="text-blue-100  text-sm"> Company Location</label><br>
+                        <input class="h-8 w-60 rounded outline-none pl-2 text-sm bg-blue-50" type="text"
+                            placeholder="enter company location" id="companyLocation" required><br><br>
+                        <!-- phone input field -->
+                        <!-- phone name number input field -->
+                        <label for="Phone" class="text-blue-100  text-sm"> Phone</label><br>
+                        <input class="h-8 w-60 rounded outline-none pl-2 text-sm bg-blue-50" type="text"
+                            placeholder="enter phone number" id="phoneNumber" required><br><br>
+                    </div>
+                    <div>
+                        <!-- logo input field -->
+                        <!--   logo input field -->
+                        <label for="logo" class="text-blue-100  text-sm"> Logo</label><br>
+                        <input class="h-8 w-60 rounded outline-none pl-2 text-sm bg-blue-50" type="file" id="logo"
+                            required><br><br>
+                        <!-- phone input field -->
+                        <!-- phone name number input field -->
+                        <label for="description" class="text-blue-100  text-sm"> Description</label><br>
+                        <textarea class="h-[195px] w-60 rounded outline-none p-2 text-sm bg-blue-50" type="tex"
+                            placeholder="Description your company and the service you offer" id="description"
+                            required></textarea><br><br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- payment and security details -->
+            <!-- payment and security details -->
+            <div class=" lg:mt-0 md:mt-10 ml-10 lg:ml-0 md:ml-0">
+                <p class="text-blue-100 text-lg">Payment and Security </p>
+                <div class="mt-6 md:mt-4 ">
+                    <!-- payment mode input field -->
+                    <!-- payment mode input field -->
+                    <label for="" class="text-blue-100 text-sm">Payment Mode</label><br>
+                    <select class="h-8 w-60 rounded outline-none pl-2 text-sm bg-blue-50" type=" text"
+                        placeholder="enter your name" id="paymentMode" required>
+                        <option value="">-- payment Option</option>
+                        <option value="Bank">
+                            Bank
+                        </option>
+                        <option value="Mobile Miney">Mobile Money</option>
+                        <option value="On Delivery">
+                            On Delivery
+                        </option>
+                    </select><br><br>
+                    <!-- account number input field -->
+                    <!-- email account number input field -->
+                    <label for="" class="text-blue-100  text-sm">Account Number</label><br>
+                    <input class="h-8 w-60 rounded outline-none pl-2 text-sm bg-blue-50" type="text"
+                        placeholder="enter account number" id="accountNumber" required><br><br>
+                    <!-- account number input field -->
+                    <!-- email account number input field -->
+                    <label for="" class="text-blue-100  text-sm">Password</label><br>
+                    <input class="h-8 w-60 rounded outline-none pl-2 text-sm bg-blue-50" type="password"
+                        placeholder="enter  password" id="password" required><br><br>
+                    <!--  confirm password input field -->
+                    <!-- confirm password number input field -->
+                    <label for="" class="text-blue-100  text-sm">Confirm Password</label><br>
+                    <input class="h-8 w-60 rounded outline-none pl-2 text-sm bg-blue-50" type="password"
+                        placeholder="confirm password" id="confirmPassword" required><br><br>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-center    mt-4">
+            <div>
+                <div>
+                    <!-- terms and condition -->
+                    <input  type="checkbox" name="" id="term"><a href=""><span class=" text-blue-100 ml-2 text-sm">Accept Terms & Conditions</span></a><br><br>
+                    <!-- submit button-->
+                    <button class="text-white bg-blue-500 h-8 rounded w-60" type="submit" id="serviceSeller">Create</button>
+                </div>
+                <div class="text-center">
+                    <p class="mt-8 text-white text-[13px]">Already have an account? <a class="text-blue-500"
+                            href="../login.html"> Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <!-- script -->
+    <script src="../Assets/jquery-3.6.0.min.js"></script>
+    <script src="../request.js"></script>
+    <script src="../Assets/sweetalert.min.js"></script>
+</body>
+
+</html>

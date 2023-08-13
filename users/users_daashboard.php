@@ -5,7 +5,7 @@ session_start();
 
 //dbConnection
 //dbConnection
-include("dbConnection.php");
+include("../dbConnection.php");
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +24,7 @@ include("dbConnection.php");
     <link rel="stylesheet" href="nav.css">
     <!-- script -->
     <!-- script -->
-    <script src="Assets/tailwind.js"></script>
+    <script src="../Assets/tailwind.js"></script>
     <style>
         /* Set the scrollbar height */
         ::-webkit-scrollbar {
@@ -147,14 +147,14 @@ include("dbConnection.php");
                 <!-- services -->
                 <div id="container" class="mt-8 text-center flex gap-6 pr-6 pl-6">
                     <div class="w-[150px] item">
-                        <img class="w-[150px] h-[150px] rounded-lg" src="images/engine-oil-leak.webp" alt="">
+                        <img class="w-[150px] h-[150px] rounded-lg" src="../images/engine-oil-leak.webp" alt="">
                         <p class="mt-2 text-blue-50">Engine oil leak</p>
                         <p class="mt-1 text-blue-50">GHC 40</p>
                         <button class="h-9 w-max bg-blue-600 rounded-md pl-1 pr-1 text-white">Add to Cart</button>
 
                     </div>
                     <div class="w-[150px] item">
-                        <img class="w-[150px] h-[150px] rounded-lg" src="images/engine-oil-leak.webp" alt="">
+                        <img class="w-[150px] h-[150px] rounded-lg" src="../images/engine-oil-leak.webp" alt="">
                         <p class="mt-2 text-blue-50">Engine oil leak</p>
                         <p class="mt-1 text-blue-50">GHC 40</p>
                         <button class="h-9 w-max bg-blue-600 rounded-md pl-1 pr-1 text-white">Add to Cart</button>
