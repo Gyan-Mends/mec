@@ -18,6 +18,8 @@
     <!-- script -->
     <script src="Assets/tailwind.js"></script>
     <script>
+        //funtion for  the toggle icon
+        //funtion for  the toggle icon
         function myFunction() {
             var x = document.getElementById("myTopnav");
             if (x.className == "topnav") {
@@ -33,11 +35,11 @@
     <!-- navigation bar -->
     <!-- navigation bar -->
     <div class="topnav lg:!ml-auto register" id="myTopnav">
-        <a class="a !text-blue-100 hover:!text-white p-2" href="index.php">Home</a>
-        <a class="a !text-blue-100 hover:!text-white p-2" href="#">Contact</a>
-        <a class="a !text-blue-100 hover:!text-white p-2" href="#">About</a>
-        <a class="a !text-blue-100 hover:!text-white p-2" href="services.php">Services</a>
-        <a class="a !text-blue-100 hover:!text-white p-2" href="login.html">Login</a>
+        <a class="a !text-blue-100 hover:!text-white p-2 text-[14px]" href="index.php">Home</a>
+        <a class="a !text-blue-100 hover:!text-white p-2 text-[14px]" href="contact.html">Contact</a>
+        <a class="a !text-blue-100 hover:!text-white p-2 text-[14px]" href="about.html">About</a>
+        <a class="a !text-blue-100 hover:!text-white p-2 text-[14px]" href="services.php">Services</a>
+        <a class="a !text-blue-100 hover:!text-white p-2 text-[14px]"  id="login">Login</a>
         <a href="javascript:void(0)" class="icon hidden a -mt-4 text-white" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -54,11 +56,11 @@
                     alt="">
             </div>
             <div class=" lg:pl-8 mt-8">
-                <p class="lg:!text-[25px]   sm:!text-[16px] text-white lg:animate-bounce md:text-lg">Become a service
+                <p class="lg:!text-[22px]   sm:!text-[16px] text-white lg:animate-bounce md:text-lg">Become a service
                     seller!</p>
                 <p class="text-md mt-4 md:mt-1 text-white text-sm md:text-sm">Get more money using your skills</p>
-                <a href="./company/register.html"><button
-                        class="bg-blue-100 h-10 w-[180px] mt-6 rounded-md">Create Now</button></a>
+                <a href="./register.html"><button
+                        class="bg-blue-100 h-10 w-[180px] mt-6 rounded-md">Register Now</button></a>
             </div>
         </div>
     </div>
@@ -66,18 +68,18 @@
     <!-- services categories -->
     <!-- services categories -->
     <div class="lg:pl-40 lg:pr-40 pt-8 pb-12">
-        <p class="text-blue-100 text-2xl ">Services Categories</p>
+        <p class="text-blue-100 text-xl ">Services Categories</p>
         <div class="lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 gap-20 mt-4 ">
             <!-- house chores-->
             <!-- house chores-->
-            <a href="">
+            <a href="cleaning.html">
                 <div
-                    class="h-40 w-[340px] lg:w-[280px] bg-gray-700 shadow-sm rounded-lg flex justify-center items-center">
+                    class="h-40 w-[340px] lg:w-[200px] bg-gray-700 shadow-sm rounded-lg flex justify-center items-center">
                     <div>
-                        <div class="h-20 w-20 rounded-full bg-white flex justify-center items-center">
-                            <i class="fa fa-home text-[25px] text-blue-600"></i>
+                        <div class="h-16 w-16 rounded-full bg-white flex justify-center items-center">
+                            <i class="fa fa-home text-[20px] text-blue-600"></i>
                         </div>
-                        <p class="text-[18px] text-blue-100 -ml-4">
+                        <p class="text-[14px] text-blue-100 -ml-4">
                             House Chores
                         </p>
                     </div>
@@ -86,14 +88,14 @@
 
             <!-- Construction -->
             <!-- Construction -->
-            <a href="">
+            <a href="construction.html">
                 <div
-                    class="mt-10 lg:mt-0 md:mt-0 h-40 w-[340px] lg:w-[280px] bg-gray-700 shadow-sm rounded-lg flex justify-center items-center">
+                    class="mt-10 lg:mt-0 md:mt-0 h-40 w-[340px] lg:w-[200px] bg-gray-700 shadow-sm rounded-lg flex justify-center items-center">
                     <div>
-                        <div class="h-20 w-20 rounded-full bg-white flex justify-center items-center">
-                            <i class="fa-solid fa-trowel-bricks text-[25px] text-blue-600"></i>
+                        <div class="h-16 w-16 rounded-full bg-white flex justify-center items-center">
+                            <i class="fa-solid fa-trowel-bricks text-[20px] text-blue-600"></i>
                         </div>
-                        <p class="text-[18px] -ml-4 text-blue-100">
+                        <p class="text-[14px] -ml-4 text-blue-100">
                             Construction
                         </p>
                     </div>
@@ -102,14 +104,14 @@
 
             <!-- Teaching -->
             <!-- Teaching -->
-            <a href="">
+            <a href="teaching.html">
                 <div
-                    class="mt-10 lg:mt-0 md:mt-0 h-40 w-[340px] md:w-[780px] lg:w-[280px] bg-gray-700 shadow-sm rounded-lg flex justify-center items-center">
+                    class="mt-10 lg:mt-0 md:mt-0 h-40 w-[340px] md:w-[780px] lg:w-[200px] bg-gray-700 shadow-sm rounded-lg flex justify-center items-center">
                     <div>
-                        <div class="h-20 w-20 rounded-full bg-white flex justify-center items-center">
+                        <div class="h-14 w-14 rounded-full bg-white flex justify-center items-center">
                             <i class="fa-solid fa-person-chalkboard text-[29px] text-blue-600"></i>
                         </div>
-                        <p class="text-[18px] text-blue-100">
+                        <p class="   text-[14px] text-blue-100">
                             Teaching
                         </p>
                     </div>
@@ -121,14 +123,14 @@
         <div class="lg:grid lg:grid-cols-4 md:grid md:grid-cols-2  gap-20 mt-10">
             <!-- Mechanics -->
             <!-- Mechanics -->
-            <a href="">
+            <a href="mechanics.html">
                 <div
-                    class="mt-10 lg:mt-0 md:mt-0 h-40 w-[340px] lg:w-[200px] bg-gray-700 shadow-sm flex justify-center items-center rounded-lg">
+                    class="mt-10 lg:mt-0 md:mt-0 h-40 w-[340px] lg:w-[160px] bg-gray-700 shadow-sm flex justify-center items-center rounded-lg ">
                     <div>
-                        <div class="h-20 w-20 rounded-full bg-white flex justify-center items-center">
-                            <i class="fa-solid fa-car-wrench text-[25px] text-blue-600"></i>
+                        <div class="h-16 w-16 rounded-full bg-white flex justify-center items-center">
+                            <i class="fa-solid fa-car-wrench text-[20px] text-blue-600"></i>
                         </div>
-                        <p class="text-[18px] -ml-4 text-blue-100">
+                        <p class="text-[14px]  -ml-2 text-blue-100">
                             Mechanics
                         </p>
                     </div>
@@ -137,14 +139,14 @@
 
             <!-- Massage -->
             <!-- Massage -->
-            <a href="">
+            <a href="massage.html">
                 <div
-                    class="mt-10 lg:mt-0 md:mt-0 h-40 w-[340px] lg:w-[200px] bg-gray-700 shadow-sm rounded-lg flex justify-center items-center">
+                    class="mt-10 lg:mt-0 md:mt-0 h-40 w-[340px] lg:w-[160px] bg-gray-700 shadow-sm rounded-lg flex justify-center items-center">
                     <div>
-                        <div class="h-20 w-20 rounded-full bg-white flex justify-center items-center">
-                            <i class="fa-sharp fa-solid fa-spa text-[29px] text-blue-600"></i>
+                        <div class="h-16 w-16 rounded-full bg-white flex justify-center items-center">
+                            <i class="fa-sharp fa-solid fa-spa text-[20px] text-blue-600"></i>
                         </div>
-                        <p class="text-[18px] text-blue-100">
+                        <p class="text-[14px] text-blue-100">
                             Massage
                         </p>
                     </div>
@@ -153,14 +155,14 @@
 
             <!-- Electricals -->
             <!-- Electricals -->
-            <a href="">
+            <a href="electricals.html">
                 <div
-                    class="mt-10 lg:mt-0 md:mt-0 h-40 w-[340px] lg:w-[200px] bg-gray-700 shadow-sm rounded-lg flex justify-center items-center">
+                    class="mt-10 lg:mt-0 md:mt-0 h-40 w-[340px] lg:w-[160px] bg-gray-700 shadow-sm rounded-lg flex justify-center items-center">
                     <div>
-                        <div class="h-20 w-20 rounded-full bg-white flex justify-center items-center">
-                            <i class="fa-solid fa-plug text-[29px] text-blue-600"></i>
+                        <div class="h-16 w-16 rounded-full bg-white flex justify-center items-center">
+                            <i class="fa-solid fa-plug text-[20px] text-blue-600"></i>
                         </div>
-                        <p class="text-[18px] text-blue-100">
+                        <p class="text-[14px] text-blue-100">
                             Electricals
                         </p>
                     </div>
@@ -171,12 +173,12 @@
             <!-- More -->
             <a href="">
                 <div
-                    class="mt-10 lg:mt-0 md:mt-0 h-40 w-[340px] lg:w-[200px] bg-gray-700 shadow-sm rounded-lg flex justify-center items-center">
+                    class="mt-10 lg:mt-0 md:mt-0 h-40 w-[340px] lg:w-[160px] bg-gray-700 shadow-sm rounded-lg flex justify-center items-center">
                     <div>
-                        <div class="h-20 w-20 rounded-full bg-white flex justify-center items-center">
-                            <i class="fa-solid fa-objects-column text-[29px] text-blue-600"></i>
+                        <div class="h-16 w-16 rounded-full bg-white flex justify-center items-center">
+                            <i class="fa-solid fa-objects-column text-[20px] text-blue-600"></i>
                         </div>
-                        <p class="text-[18px] ml-4 text-blue-100">
+                        <p class="text-[14px] ml-4 text-blue-100">
                             More
                         </p>
                     </div>
@@ -190,7 +192,7 @@
 
     <div class="grid grid-cols-1 lg:grid-cols-2 pt-8">
         <div class="">
-            <p class="text-white text-[30px]">
+            <p class="text-white text-[26px]">
                 All the services you needed are <br> right at you finger tips
             </p>
             <p class="mt-6 text-gray-400 text-[14px]">
@@ -220,7 +222,7 @@
     <!-- services -->
     <!-- services -->
     <div class="grid grid-cols-1 lg:grid-cols-3 mt-20">
-        <div class="h-[150px] border border-gray-500 border-[0.1px] lg:w-[420px] pl-8 pr-8">
+        <div class="h-[150px] border border-gray-500 border-[0.1px] lg:w-[310px] pl-8 pr-8">
             <div class="h-10 w-10 rounded-full bg-gray-800 -mt-[20px] flex items-center justiy-center text-center">
                 <i class="fa-regular fa-car-wrench m-auto text-white"></i>
             </div>
@@ -229,7 +231,7 @@
                 We give an assortment of fix and support administration for all services
             </p>
         </div>
-        <div class="h-[150px] border border-gray-500 border-[0.1px] mt-8 lg:mt-0 lg:w-[420px] pl-8 pr-8 lg:ml-2">
+        <div class="h-[150px] border border-gray-500 border-[0.1px] mt-8 lg:mt-0 lg:w-[310px] pl-8 pr-8 lg:ml-2">
             <div class="h-10 w-10 rounded-full bg-gray-800 -mt-[20px] flex items-center justiy-center text-center">
                 <i class="fa-brands fa-servicestack text-white m-auto "></i>
             </div>
@@ -238,7 +240,7 @@
                 The main principle of our work is to offer a wide scope of value quality services
             </p>
         </div>
-        <div class="h-[150px] border border-gray-500 border-[0.1px] lg:w-[420px] pl-8 pr-8 lg:ml-2 mt-8 lg:mt-0 ">
+        <div class="h-[150px] border border-gray-500 border-[0.1px] lg:w-[310px] pl-8 pr-8 lg:ml-2 mt-8 lg:mt-0 ">
             <div class="h-10 w-10 rounded-full bg-gray-800 -mt-[20px] flex items-center justiy-center text-center">
                 <i class="fa-duotone fa-hands-holding-circle m-auto text-white"></i>
             </div>
@@ -297,30 +299,30 @@
 
     <!-- why choose us -->
     <!-- why choose us -->
-    <p class="text-white text-[27px] mt-20">Why <br>choose us</p>
+    <p class="text-white text-[24px] mt-20">Why <br>choose us</p>
     <div class="grid grid-ols-1 lg:grid-cols-3 mt-8">
-        <div class="h-[150px] border border-gray-500 border-[0.1px] lg:w-[420px] p-6 text-center">
+        <div class="h-[150px] border border-gray-500 border-[0.1px] lg:w-[310px] p-6 text-center">
             <div
                 class="h-10 w-10 rounded-full border border-gray-600  flex items-center justiy-center text-center m-auto">
                 <i class="fa-regular fa-car-wrench m-auto text-white"></i>
             </div>
-            <p class="text-white text-20 mt-1"> Knowledge and <br> Experience</p>
+            <p class="text-white text-[14px] mt-1"> Knowledge and <br> Experience</p>
 
         </div>
-        <div class="h-[150px] border border-gray-500 mt-4 lg:mt-0 border-[0.1px] lg:w-[420px] p-6 text-center">
+        <div class="h-[150px] border border-gray-500 mt-4 lg:mt-0 border-[0.1px] lg:w-[310px] p-6 text-center">
             <div
                 class="h-10 w-10 rounded-full border border-gray-600  flex items-center justiy-center text-center m-auto">
                 <i class="fa-regular fa-car-wrench m-auto text-white"></i>
             </div>
-            <p class="text-white text-20 mt-1"> commitment and <br> Satisfaction</p>
+            <p class="text-white text-[14px] mt-1"> commitment and <br> Satisfaction</p>
 
         </div>
-        <div class="h-[150px] mt-4 lg:mt-0 border border-gray-500 border-[0.1px] lg:w-[420px] p-6 text-center">
+        <div class="h-[150px] mt-4 lg:mt-0 border border-gray-500 border-[0.1px] lg:w-[310px] p-6 text-center">
             <div
                 class="h-10 w-10 rounded-full border border-gray-600  flex items-center justiy-center text-center m-auto">
                 <i class="fa-regular fa-car-wrench m-auto text-white"></i>
             </div>
-            <p class="text-white text-20 mt-1"> Quality Service and <br> Quarantteed</p>
+            <p class="text-white text-[14px] mt-1"> Quality Service and <br> Quarantteed</p>
 
         </div>
     </div>
@@ -328,7 +330,7 @@
     <!-- top rated -->
     <!-- top rated -->
     <div class="mt-16">
-        <p class="text-[27px] text-blue-100">
+        <p class="text-[24px] text-blue-100">
             Top Rated
         </p>
 
@@ -418,40 +420,42 @@
     <footer class="bg-gray-900 text-gray-300 py-8 mt-20 -mr-6 -ml-6 ">
         <div class="container mx-auto px-10 lg:grid lg:grid-cols-3 md:grid md:grid-cols-3 gap-20">
             <div class="">
-                <h2 class="text-lg font-bold mb-4">Contact Us</h2>
-                <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i>123 Main St, Anytown USA</p>
-                <p class="mb-2"><i class="fas fa-phone mr-2"></i>555-555-5555</p>
-                <p class="mb-2"><i class="fas fa-envelope mr-2"></i>info@serviceorder.com</p>
+                <h2 class="text-lg mb-4">Contact Us</h2>
+                <p class="mb-2  text-[12px]"><i class="fas fa-map-marker-alt mr-2"></i>123 Main St, Anytown USA</p>
+                <p class="mb-2 text-[12px]"><i class="fas fa-phone mr-2"></i>555-555-5555</p>
+                <p class="mb-2 text-[12px]"><i class="fas fa-envelope mr-2"></i>info@serviceorder.com</p>
             </div>
             <div class="mt-8 md:mt-0 lg:mt-0">
-                <h2 class="text-lg font-bold mb-4">Services</h2>
+                <h2 class="text-lg  mb-4">Services</h2>
                 <ul class="list-disc pl-4">
-                    <li class="mb-2"><a href="#">Oil Changes</a></li>
-                    <li class="mb-2"><a href="#">Tire Rotation</a></li>
-                    <li class="mb-2"><a href="#">Brake Repair</a></li>
-                    <li class="mb-2"><a href="#">Engine Diagnostics</a></li>
+                    <li class="mb-2 text-[12px]"><a href="#">Oil Changes</a></li>
+                    <li class="mb-2 text-[12px]"><a href="#">Tire Rotation</a></li>
+                    <li class="mb-2 text-[12px]"><a href="#">Brake Repair</a></li>
+                    <li class="mb-2 text-[12px]"><a href="#">Engine Diagnostics</a></li>
                 </ul>
             </div>
             <div class="mt-8  md:mt-0 lg:mt-0">
-                <h2 class="text-lg font-bold mb-">Follow Us</h2>
+                <h3 class="text-lg mb-4">Follow Us</h3>
                 <div class="flex items-center mb-2">
                     <i class="fab fa-facebook-square mr-2"></i>
-                    <a href="#">Facebook</a>
+                    <a class="text-[12px]" href="#">Facebook</a>
                 </div>
                 <div class="flex items-center mb-2">
                     <i class="fab fa-twitter-square mr-2"></i>
-                    <a href="#">Twitter</a>
+                    <a class="text-[12px]" href="#">Twitter</a>
                 </div>
                 <div class="flex items-center mb-2">
                     <i class="fab fa-instagram-square mr-2"></i>
-                    <a href="#">Instagram</a>
+                    <a class="text-[12px]" href="#">Instagram</a>
                 </div>
             </div>
         </div>
     </footer>
 
 
-
+    <script src="Assets/jquery-3.6.0.min.js"></script>
+    <script src="Assets/sweetalert.min.js"></script>
+    <script src="request.js"></script>
 </body>
 
 </html>

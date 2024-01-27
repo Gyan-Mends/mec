@@ -16,6 +16,10 @@ if (isset($_POST["register"]) && $_POST["register"] == "register") {
     $email = $_POST["email"];
     $number = $_POST["number"];
     $password = $_POST["password"];
+    $cpassword =$_POST["cpassword"];
+    $image = $_FILES["image"]["name"];
+    $img_tmp_name = $_FILES["image"]["tmp_name"];
+    $img_path = "./images/".$image;
     $date = date("Y-m-d");
 
     //checking if email alredy exist
@@ -29,18 +33,20 @@ if (isset($_POST["register"]) && $_POST["register"] == "register") {
     } else {
         //inserting data into the database
         //inserting data into the database
+       if(move_uploaded_file($img_tmp_name,$img_path)){
         $insert = mysqli_query($connection, "INSERT INTO sign_up (`name`,`email`,`number`,`password`,`date`) VALUES ('$name', '$email','$number','$password','$date')");
         if ($insert) {
            $response = [
                 'status' => 200,
                 'message' => "User registered succeffully"
            ];
-        } else {
+            } else {
             $response = [
                 'status' => 404,
                 'message' => "Unable to register user"
            ];
         }
+       }
         
         header('Content-type: application/json');
         echo json_encode($response);
@@ -105,6 +111,56 @@ if(isset($_POST["serviceSeller"]) && $_POST["serviceSeller"] == "serviceSeller")
     $accountNumber = $_POST["accountNumber"];
     $password = $_POST["password"];
     $confirmPassword = $_POST["confirmPassword"];
-    $logo = $_FILES["logo"];
+    $image = $_FILES["image"]["name"];
+    $img_temp_name = $_FILES['image']['tmp_name'];
+    $img_path = "./images/" . $image;
+    $date = date('Y-m-d');
+    if(move_uploaded_file($img_temp_name,$img_path)){
+        //inserting into the database
+        $insert_query = mysqli_query($connection, "INSERT INTO service_seller (company_name, email, company_location, phone_number, `description`, payment_mode, account_number, logo,`password`,`date`) VALUES ('$companyName', '$email', '$companyLocation', '$phoneNumber', '$description', '$paymentMode', '$accountNumber', '$image','$password','$date')");
+
+        if($insert_query){
+            $response = [
+                'status' => 200,
+                'message' => "Registeration successfull"
+            ];
+        }else{
+            $response = [
+                'status' => 404,
+                'message' => "Unable to register user"
+            ];
+        }
+    }
+    header('Content-type: application/json');
+    echo json_encode($response);  
 }
+
+//contact us messages
+//contact us messages
+if(isset($_POST["Contact"])){
+    //accepting input from the user
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $number = $_POST["number"];
+    $message = $_POST["message"];
+    $date = date("Y-m-d");
+
+    //inserting the messsage into the database
+    $message_insert_query = mysqli_query($connection, "INSERT INTO `messages` (name,email,number,message, date) VALUES ('$name', '$email','$number', '$message', '$date')");
+
+    if($message_insert_query){
+        $response = [
+            'status' => 2000,
+            'message' =>  'Message sent successfull'
+        ];
+    }else{
+        $response = [
+            'message' =>  'Unable to send message'
+        ];
+    }
+
+    header("content-type:application/json");
+    echo json_encode($response);
+}
+  
 ?>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- assets -->
+    <!-- assets -->
+    <link rel="stylesheet" href="Assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="Assets/fonts/fonts.css">
+    <link rel="stylesheet" href="nav.css">
+
+    <!-- script -->
+    <script src="Assets/tailwind.js"></script>
+</head>
+<body style="font-family: poppins;" class="bg-gray-800 pt-6 pl-6 pr-6">
+    <!-- navigation bar -->
+    <!-- navigation bar -->
+    <div class="topnav lg:!ml-auto register" id="myTopnav">
+        <a class="a !text-blue-100 hover:!text-white p-2 text-[14px]" href="index.html">Home</a>
+        <a class="a !text-blue-100 hover:!text-white p-2 text-[14px]" href="contact.html">Contact</a>
+        <a class="a !text-blue-100 hover:!text-white p-2 text-[14px]" href="#">About</a>
+        <a class="a !text-blue-100 hover:!text-white p-2 text-[14px]" href="services.php">Services</a>
+        <a class="a !text-blue-100 hover:!text-white p-2 text-[14px]" href="login.html">Login</a>
+        <a href="javascript:void(0)" class="icon hidden a -mt-4 text-white" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <div class="mt-4 h-[0.1px] bg-gray-500"></div>
+
+    <div class="mt-10">
+
+    </div>
+
+
+    <!--footer -->
+    <!--footer -->
+    <footer class="bg-gray-900 text-gray-300 py-8 mt-10 -mr-6 -ml-6 ">
+        <div class="container mx-auto px-10 lg:grid lg:grid-cols-3 md:grid md:grid-cols-3 gap-20">
+            <div class="">
+                <h2 class="text-lg mb-4">Contact Us</h2>
+                <p class="mb-2  text-[12px]"><i class="fas fa-map-marker-alt mr-2"></i>123 Main St, Anytown USA</p>
+                <p class="mb-2 text-[12px]"><i class="fas fa-phone mr-2"></i>555-555-5555</p>
+                <p class="mb-2 text-[12px]"><i class="fas fa-envelope mr-2"></i>info@serviceorder.com</p>
+            </div>
+            <div class="mt-8 md:mt-0 lg:mt-0">
+                <h2 class="text-lg  mb-4">Services</h2>
+                <ul class="list-disc pl-4">
+                    <li class="mb-2 text-[12px]"><a href="#">Oil Changes</a></li>
+                    <li class="mb-2 text-[12px]"><a href="#">Tire Rotation</a></li>
+                    <li class="mb-2 text-[12px]"><a href="#">Brake Repair</a></li>
+                    <li class="mb-2 text-[12px]"><a href="#">Engine Diagnostics</a></li>
+                </ul>
+            </div>
+            <div class="mt-8  md:mt-0 lg:mt-0">
+                <h3 class="text-lg mb-4">Follow Us</h3>
+                <div class="flex items-center mb-2">
+                    <i class="fab fa-facebook-square mr-2"></i>
+                    <a class="text-[12px]" href="#">Facebook</a>
+                </div>
+                <div class="flex items-center mb-2">
+                    <i class="fab fa-twitter-square mr-2"></i>
+                    <a class="text-[12px]" href="#">Twitter</a>
+                </div>
+                <div class="flex items-center mb-2">
+                    <i class="fab fa-instagram-square mr-2"></i>
+                    <a class="text-[12px]" href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+        <!-- script -->
+        <script src="Assets/jquery-3.6.0.min.js"></script>
+        <script src="request.js"></script>
+        <script src="Assets/sweetalert.min.js"></script>
+        <script>
+            //funtion for  the toggle icon
+            //funtion for  the toggle icon
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className == "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+</body>
+</html>

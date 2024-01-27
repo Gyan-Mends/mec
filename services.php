@@ -5,7 +5,7 @@ session_start();
 
 //dbConnection
 //dbConnection
-include("./database/dbConnection.php");
+include("dbConnection.php");
 ?>
 
 <!DOCTYPE html>
@@ -27,6 +27,8 @@ include("./database/dbConnection.php");
     <script src="Assets/tailwind.js"></script>
 
     <script>
+        //nav toggle function
+        //nav toggle function
         function myFunction() {
             var x = document.getElementById("myTopnav");
             if (x.className == "topnav") {
@@ -36,6 +38,8 @@ include("./database/dbConnection.php");
             }
         }
 
+        //Search fucntion
+        //Search fucntion
         function display() {
             const searchInput = document.querySelector('#search-input');
             const container = document.querySelector('#container');
@@ -60,15 +64,13 @@ include("./database/dbConnection.php");
 <body style="font-family: poppins; overflow-x:hidden" class="bg-gray-800 pt-6 pl-6 pr-6">
     <!-- navigation bar -->
     <!-- navigation bar -->
-    <!-- navigation bar -->
-    <!-- navigation bar -->
     <div class="topnav lg:!ml-auto register" id="myTopnav">
-        <a class="a !text-blue-100 hover:!text-white p-2" href="index.php">Home</a>
-        <a class="a !text-blue-100 hover:!text-white p-2" href="#">Contact</a>
-        <a class="a !text-blue-100 hover:!text-white p-2" href="#">About</a>
-        <a class="a !text-blue-100 hover:!text-white p-2" href="services.php">Services</a>
-        <a class="a !text-blue-100 hover:!text-white p-2" href="login.php">Order Services</a>
-        <input type="text" id="search-input" class="lg:float-right lg:-mt-2 md:float-right md:-mt-2  h-9 w-60 pl-2 rounded-lg outline-none" placeholder="Enter service to search" onkeyup="display()" placeholder="Search">
+        <a class="a !text-blue-100 hover:!text-white p-2 text-[14px]" href="index.php">Home</a>
+        <a class="a !text-blue-100 hover:!text-white p-2 text-[14px]" href="contact.html">Contact</a>
+        <a class="a !text-blue-100 hover:!text-white p-2 text-[14px]" href="about.html">About</a>
+        <a class="a !text-blue-100 hover:!text-white p-2 text-[14px]" href="services.php">Services</a>
+        <a class="a !text-blue-100 hover:!text-white p-2 text-[14px]" href="login.html">Login</a>
+        <input type="text" id="search-input" class="lg:float-right lg:-mt-2 md:float-right md:-mt-2  h-7 w-60 pl-2 rounded outline-none placeholder:text-sm" placeholder="Enter service to search" onkeyup="display()" placeholder="Search">
         <a href="javascript:void(0)" class="icon hidden a -mt-4 mt-2 text-white" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -79,12 +81,12 @@ include("./database/dbConnection.php");
 
     <!-- categories -->
     <!-- categories -->
-    <div class="pt-4 w-[100vw]  flex overflow-x-scroll lg:overflow-x-hidden ">
+    <div class="pt-4  w-[100vw]  flex overflow-x-scroll lg:overflow-x-hidden ">
         <?php
         $select_query = mysqli_query($connection, "SELECT * FROM s_categories");
         while ($rows = mysqli_fetch_array($select_query)) {
         ?>
-            <a href=""><button class="bg-blue-600 rounded-full p-1 text-[13px] w-max"><?php echo $rows["name"] ?></button></a>
+            <a href=""><button class="bg-blue-600 rounded-full p-1 text-[13px] w-max ml-2 text-blue-100"><?php echo $rows["name"] ?></button></a>
         <?php
         }
         ?>
@@ -112,43 +114,42 @@ include("./database/dbConnection.php");
     </div>
 
 
-    <!--footer -->
+        <!--footer -->
     <!--footer -->
     <footer class="bg-gray-900 text-gray-300 py-8 mt-20 -mr-6 -ml-6 ">
-        <div class="container mx-auto px-10 grid grid-cols-1 lg:grid-cols-3">
+        <div class="container mx-auto px-10 lg:grid lg:grid-cols-3 md:grid md:grid-cols-3 gap-20">
             <div class="">
-                <h2 class="text-lg font-bold mb-4">Contact Us</h2>
-                <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i>123 Main St, Anytown USA</p>
-                <p class="mb-2"><i class="fas fa-phone mr-2"></i>555-555-5555</p>
-                <p class="mb-2"><i class="fas fa-envelope mr-2"></i>info@mechanicorderservice.com</p>
+                <h2 class="text-lg mb-4">Contact Us</h2>
+                <p class="mb-2  text-[12px]"><i class="fas fa-map-marker-alt mr-2"></i>123 Main St, Anytown USA</p>
+                <p class="mb-2 text-[12px]"><i class="fas fa-phone mr-2"></i>555-555-5555</p>
+                <p class="mb-2 text-[12px]"><i class="fas fa-envelope mr-2"></i>info@serviceorder.com</p>
             </div>
-            <div class="mt-8 lg:mt-0">
-                <h2 class="text-lg font-bold mb-4">Services</h2>
+            <div class="mt-8 md:mt-0 lg:mt-0">
+                <h2 class="text-lg  mb-4">Services</h2>
                 <ul class="list-disc pl-4">
-                    <li class="mb-2"><a href="#">Oil Changes</a></li>
-                    <li class="mb-2"><a href="#">Tire Rotation</a></li>
-                    <li class="mb-2"><a href="#">Brake Repair</a></li>
-                    <li class="mb-2"><a href="#">Engine Diagnostics</a></li>
+                    <li class="mb-2 text-[12px]"><a href="#">Oil Changes</a></li>
+                    <li class="mb-2 text-[12px]"><a href="#">Tire Rotation</a></li>
+                    <li class="mb-2 text-[12px]"><a href="#">Brake Repair</a></li>
+                    <li class="mb-2 text-[12px]"><a href="#">Engine Diagnostics</a></li>
                 </ul>
             </div>
-            <div class="mt-8 lg:mt-0">
-                <h2 class="text-lg font-bold mb-">Follow Us</h2>
+            <div class="mt-8  md:mt-0 lg:mt-0">
+                <h3 class="text-lg mb-4">Follow Us</h3>
                 <div class="flex items-center mb-2">
                     <i class="fab fa-facebook-square mr-2"></i>
-                    <a href="#">Facebook</a>
+                    <a class="text-[12px]" href="#">Facebook</a>
                 </div>
                 <div class="flex items-center mb-2">
                     <i class="fab fa-twitter-square mr-2"></i>
-                    <a href="#">Twitter</a>
+                    <a class="text-[12px]" href="#">Twitter</a>
                 </div>
                 <div class="flex items-center mb-2">
                     <i class="fab fa-instagram-square mr-2"></i>
-                    <a href="#">Instagram</a>
+                    <a class="text-[12px]" href="#">Instagram</a>
                 </div>
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>

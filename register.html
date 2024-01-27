@@ -9,11 +9,11 @@
 
     <!-- assets -->
     <!-- assets -->
-    <link rel="stylesheet" href="../Assets/fonts/fonts.css">
+    <link rel="stylesheet" href="./Assets/fonts/fonts.css">
 
     <!-- script -->
     <!-- script -->
-    <script src="../Assets/tailwind.js"></script>
+    <script src="./Assets/tailwind.js"></script>
 </head>
 
 <body style="font-family: 'poppins'; overflow-x:hidden;" class="bg-gray-800 p-10">
@@ -23,18 +23,18 @@
     </div>
     <!-- forms -->
     <!-- forms -->
-    <div class="forms pt-6 mt-4 ml-auto">
+    <div class="forms pt-6 mt-4 ml-auto" enctype="multipart/form-data">
         <div class=" lg:grid lg:grid-cols-3 gap-10 mt-8 ">
             <!-- company details -->
             <!-- company details -->
             <div class="lg:col-span-2 ml-10 lg:ml-0 md:ml-0 justify-center">
-                <p class="text-xl text-blue-100 text-center">Company Details</p>
+                <p class="text-xl text-blue-100 ">Company Details</p>
                 <div class="lg:grid lg:grid-cols-2  md:grid md:grid-cols-2 mt-6">
 
                     <div>
                         <!-- company name input field -->
                         <!-- company name number input field -->
-                        <label for="" class="text-blue-100  text-sm"> Company Name</label><br>
+                        <label for="compny name" class="text-blue-100  text-sm"> Company Name</label><br>
                         <input class="h-8 w-60 rounded outline-none pl-2 text-sm bg-blue-50" type="text"
                             placeholder=" enter company name" id="companyName" required><br><br>
                         <!-- email input field -->
@@ -57,10 +57,10 @@
                         <!-- logo input field -->
                         <!--   logo input field -->
                         <label for="logo" class="text-blue-100  text-sm"> Logo</label><br>
-                        <input class="h-8 w-60 rounded outline-none pl-2 text-sm bg-blue-50" type="file" id="logo"
+                        <input class="h-8 w-60 rounded outline-none pl-2 text-sm bg-blue-50" type="file" name="image" id="image"
                             required><br><br>
                         <!-- phone input field -->
-                        <!-- phone name number input field -->
+                        <!-- phone  number input field -->
                         <label for="description" class="text-blue-100  text-sm"> Description</label><br>
                         <textarea class="h-[195px] w-60 rounded outline-none p-2 text-sm bg-blue-50" type="tex"
                             placeholder="Description your company and the service you offer" id="description"
@@ -83,7 +83,7 @@
                         <option value="Bank">
                             Bank
                         </option>
-                        <option value="Mobile Miney">Mobile Money</option>
+                        <option value="Mobile Money">Mobile Money</option>
                         <option value="On Delivery">
                             On Delivery
                         </option>
@@ -117,7 +117,7 @@
                 </div>
                 <div class="text-center">
                     <p class="mt-8 text-white text-[13px]">Already have an account? <a class="text-blue-500"
-                            href="../login.html"> Login</a></p>
+                            href="./login.html"> Login</a></p>
                 </div>
             </div>
         </div>
@@ -125,9 +125,9 @@
 
     <!-- script -->
     <!-- script -->
-    <script src="../Assets/jquery-3.6.0.min.js"></script>
-    <script src="../request.js"></script>
-    <script src="../Assets/sweetalert.min.js"></script>
+    <script src="./Assets/jquery-3.6.0.min.js"></script>
+    <script src="./request.js"></script>
+    <script src="./Assets/sweetalert.min.js"></script>
 </body>
 
 </html>
