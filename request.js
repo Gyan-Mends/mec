@@ -227,7 +227,11 @@ $("#serviceSeller").click(function (e){
     var email = $("#email").val()
     var companyLocation = $("#companyLocation").val()
     var phoneNumber = $("#phoneNumber").val()
-    var image = $("#image").val()
+    var file = $("#image")[0].files[0];
+    // Create a new FormData object
+    var formData = new FormData();
+    // Append the file to the formData object
+    formData.append("image", file);
     var description = $("#description").val()
     var paymentMode = $("#paymentMode").val()
     var accountNumber = $("#accountNumber").val()
@@ -262,7 +266,9 @@ $("#serviceSeller").click(function (e){
                            email:email,
                            companyLocation:companyLocation,
                            phoneNumber:phoneNumber,
-                           image:image,
+                           data: formData, // The data to send
+                           contentType: false, // Tell jQuery not to set the content type header
+                           processData: false,
                            description:description,
                            paymentMode:paymentMode,
                            accountNumber:accountNumber,

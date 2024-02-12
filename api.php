@@ -117,7 +117,7 @@ if(isset($_POST["serviceSeller"]) && $_POST["serviceSeller"] == "serviceSeller")
     $date = date('Y-m-d');
     if(move_uploaded_file($img_temp_name,$img_path)){
         //inserting into the database
-        $insert_query = mysqli_query($connection, "INSERT INTO service_seller (company_name, email, company_location, phone_number, `description`, payment_mode, account_number, logo,`password`,`date`) VALUES ('$companyName', '$email', '$companyLocation', '$phoneNumber', '$description', '$paymentMode', '$accountNumber', '$image','$password','$date')");
+        $insert_query = mysqli_query($connection, "INSERT INTO service_seller (company_name, email, company_location, phone_number, `description`, payment_mode, account_number, logo,`password`,`date`)  ('$companyName', '$email', '$companyLocation', '$phoneNumber', '$description', '$paymentMode', '$accountNumber', '$image','password($password)','$date')");
 
         if($insert_query){
             $response = [

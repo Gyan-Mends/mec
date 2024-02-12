@@ -22,58 +22,61 @@
             class=" h-[35rem]  mw:h-[25rem] pt-10 w-[20rem] lg:w-[40rem] md:w-[40rem]  dark:bg-gray-600 lg:border lg:border-gray-500 rounded-md items-center flex  justify-center h-screen pb-10">
             <!-- forms -->
             <!-- forms -->
-            <div class="forms">
-                <div class="flex justify-center items-center text-white">
-                    <h1 class="lg:text-[23px]  text-[23px]">Create New Account </h1>
-                </div>
-                <div class="md:grid md:grid-cols-2 lg:grid-cols-2 gap-10 mt-8 ">
-                    <div>
-                        <!-- name input field -->
-                        <!-- name input field -->
-                        <label for="" class="text-white text-sm">Name</label><br>
-                        <input class="h-8 w-60 rounded outline-none pl-2 placeholder:text-[12px]" type="text"
-                            placeholder="enter your name" id="name" required><br><br>
-                        <!-- email input field -->
-                        <!-- email input field -->
-                        <label for="" class="text-white  text-sm">Email</label><br>
-                        <input class="h-8 w-60 rounded outline-none pl-2 placeholder:text-[12px]" type="email"
-                            placeholder="enter your email" id="email" required><br><br>
-
-                        <!-- email input field -->
-                        <!-- email input field -->
-                        <label for="" class="text-white  text-sm">Image</label><br>
-                        <input type="file" id="image" class="h-8 !w-60">
+            <form action="" enctype="multipart/form-data">
+                <div class="forms">
+                    <div class="flex justify-center items-center text-white">
+                        <h1 class="lg:text-[23px]  text-[23px]">Create New Account </h1>
                     </div>
-                    <div class=" lg:mt-0">
-                        <!-- number input field -->
-                        <!-- number input field -->
-                        <label for="" class="text-white  text-sm">Number</label><br>
-                        <input class="h-8 w-60 rounded outline-none pl-2 placeholder:text-[12px]" type="number"
-                            placeholder="enter your number" id="number" required><br><br>
+                    <div class="md:grid md:grid-cols-2 lg:grid-cols-2 gap-10 mt-8 ">
+                        <div>
+                            <!-- name input field -->
+                            <!-- name input field -->
+                            <label for="" class="text-white text-sm">Name</label><br>
+                            <input class="h-8 w-60 rounded outline-none pl-2 placeholder:text-[12px]" type="text"
+                                placeholder="enter your name" id="name" required><br><br>
+                            <!-- email input field -->
+                            <!-- email input field -->
+                            <label for="" class="text-white  text-sm">Email</label><br>
+                            <input class="h-8 w-60 rounded outline-none pl-2 placeholder:text-[12px]" type="email"
+                                placeholder="enter your email" id="email" required><br><br>
 
-                        <!-- password input field -->
-                        <!-- password input field -->
-                        <label class="text-white  text-sm">Password</label><br>
-                        <input type="password" class="h-8 w-60 rounded outline-none pl-2 placeholder:text-[12px]"
-                            placeholder="enter your password" id="password" required><br><br>
+                            <!-- email input field -->
+                            <!-- email input field -->
+                            <label for="" class="text-white  text-sm">Image</label><br>
+                            <input type="file" id="image" name="image" class="h-8 !w-60">
+                        </div>
+                        <div class=" lg:mt-0">
+                            <!-- number input field -->
+                            <!-- number input field -->
+                            <label for="" class="text-white  text-sm">Number</label><br>
+                            <input class="h-8 w-60 rounded outline-none pl-2 placeholder:text-[12px]" type="number"
+                                placeholder="enter your number" id="number" required><br><br>
 
-                        <!--confirm password input field -->
-                        <!--confirm password input field -->
-                        <label class="text-white  text-sm">Confirm Password</label><br>
-                        <input type="password" class="h-8 w-60 rounded outline-none pl-2 placeholder:text-[12px]"
-                            placeholder="enter your password" id="cpassword" required><br><br>
+                            <!-- password input field -->
+                            <!-- password input field -->
+                            <label class="text-white  text-sm">Password</label><br>
+                            <input type="password" class="h-8 w-60 rounded outline-none pl-2 placeholder:text-[12px]"
+                                placeholder="enter your password" id="password" required><br><br>
+
+                            <!--confirm password input field -->
+                            <!--confirm password input field -->
+                            <label class="text-white  text-sm">Confirm Password</label><br>
+                            <input type="password" class="h-8 w-60 rounded outline-none pl-2 placeholder:text-[12px]"
+                                placeholder="enter your password" id="cpassword" required><br><br>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center items-center    mt-4">
+                        <button class="text-white bg-blue-500 h-8 rounded w-60" type="submit"
+                            id="submit">Create</button>
+                    </div>
+                    <div class="text-center">
+                        <p class="mt-8 text-white text-[13px]">Already have an account? <a class="text-blue-500"
+                                href="login.html"> Login</a></p>
                     </div>
                 </div>
-
-                <div class="flex justify-center items-center    mt-4">
-                    <button class="text-white bg-blue-500 h-8 rounded w-60" type="submit" id="submit" >Create</button>
-                </div>
-                <div class="text-center">
-                    <p class="mt-8 text-white text-[13px]">Already have an account? <a class="text-blue-500"
-                            href="login.html"> Login</a></p>
-                </div>
-            </div>
         </div>
+        </form>
     </div>
 
     <!-- script -->

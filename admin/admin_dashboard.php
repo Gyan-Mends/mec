@@ -1,11 +1,11 @@
 <?php
-//starting session
-//starting session
-session_start();
+    //starting session
+    //starting session
+    session_start();
 
-//dbConnection
-//dbConnection
-include("../dbConnection.php");
+    //dbConnection
+    //dbConnection
+    include("../dbConnection.php");
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +43,7 @@ include("../dbConnection.php");
             background-color: rgba(79, 70, 229, 0.1);
         }
     </style>
-
+    <!-- search button-->
     <script>
         function display() {
             const searchInput = document.querySelector('#search-input');
@@ -68,11 +68,10 @@ include("../dbConnection.php");
 
 <body style="font-family: poppins; overflow-x:hidden" class="bg-gray-800 ">
     <div class="flex-1 flex-col justify-between ">
-
         <div class="text-white ">
             <!-- side navigation bar for big screen-->
             <!-- side navigation bar for big screen-->
-            <div class="lg:bg-gray-700 md:bg-gray-700 flex-col justify-between lg:w-60 md:w-60 h-screen absolute hidden lg:block md:block shadow-sm">
+            <div class="lg:bg-gray-700 md:bg-gray-700 flex-col justify-between lg:w- md:w-60 h-screen absolute hidden lg:block md:block shadow-sm">
 
                 <!--nav contents -->
                 <div class="p-8 ">
@@ -85,43 +84,43 @@ include("../dbConnection.php");
                     <a href="">
                         <div class=" flex gap-4 mt-4">
                             <i class="fa-solid fa-cart-shopping text-sm text-gray-50"></i>
-                            <p class="text-blue-50 text-sm">Dashboard</p>
+                            <p class="text-blue-50 text-sm text-sm">Dashboard</p>
                         </div>
                     </a>
                     <a href="">
                         <div class="flex gap-4 mt-4">
-                            <i class="fa-regular fa-book-user text-[20px] text-gray-50"></i>
-                            <p class="text-blue-50 ">Services</p>
+                            <i class="fa-regular fa-book-user text-sm text-gray-50"></i>
+                            <p class="text-blue-50  text-sm">Services</p>
                         </div>
                     </a>
                     <a href="">
                         <div class="flex gap-4 mt-4">
-                            <i class="fa fa-users text-[20px] text-gray-50"></i>
-                            <p class="text-blue-50">Users</p>
+                            <i class="fa fa-users text-sm text-gray-50"></i>
+                            <p class="text-blue-50 text-sm">Users</p>
                         </div>
                     </a>
                     <a href="">
                         <div class="flex gap-4 mt-4">
-                            <i class="fa-solid fa-cart-shopping text-[20px] text-gray-50"></i>
-                            <p class="text-blue-50">Orders</p>
+                            <i class="fa-solid fa-cart-shopping text-sm text-gray-50"></i>
+                            <p class="text-blue-50 text-sm">Orders</p>
                         </div>
                     </a>
                     <a href="categories.php">
                         <div class="flex gap-4 mt-4">
-                            <i class="fa fa-users text-[20px] text-gray-50"></i>
-                            <p class="text-blue-50">Categories</p>
+                            <i class="fa fa-users text-sm text-gray-50"></i>
+                            <p class="text-blue-50 text-sm">Categories</p>
                         </div>
                     </a>
                     <a href="">
                         <div class="flex gap-4 mt-4">
-                            <i class="fa fa-book text-[20px] text-gray-50"></i>
-                            <p class="text-blue-50">Bookings</p>
+                            <i class="fa fa-book text-sm text-gray-50"></i>
+                            <p class="text-blue-50 text-sm">Bookings</p>
                         </div>
                     </a>
                     <a href="">
                         <div class="flex gap-4 mt-4">
-                            <i class="fa-solid fa-hand-holding-dollar text-[20px] text-gray-50"></i>
-                            <p class="text-blue-50">Payments</p>
+                            <i class="fa-solid fa-hand-holding-dollar text-sm text-gray-50"></i>
+                            <p class="text-blue-50 text-sm">Payments</p>
                         </div>
                     </a>
                 </div>
